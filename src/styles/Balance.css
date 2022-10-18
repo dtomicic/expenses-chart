@@ -1,0 +1,44 @@
+.balance {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 10px;
+    max-width: 338px;
+}
+
+.balanceLeft {
+    display: flex;
+    flex-direction: column;
+    font-family: 'DM Sans';
+    padding-left: 15px;
+    color: white;
+    gap: 5px;
+}
+
+.balanceLeftText {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.balanceLeftAmount {
+    font-size: 22px;
+    margin: 0;
+}
+
+.balanceRight {
+    padding: 30px 15px 30px 0;
+    display: flex;
+}
+
+.balanceRightImage {
+    width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+    .balance {
+        max-width: 445px;
+    }
+}
