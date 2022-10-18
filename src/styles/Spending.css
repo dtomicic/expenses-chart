@@ -1,0 +1,112 @@
+.spendingBox {
+    background-color: white;
+    width: 83%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'DM Sans';
+    padding: 0 15px 0 15px;
+    max-width: 315px;
+}
+
+.spendingBoxHeader {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.spendingBoxChart {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+}
+
+.spendingBoxChartItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    justify-content: flex-end;
+    gap: 5px;
+    width: 15%;
+}
+
+.spendingBoxChartItemPopup {
+    color: black;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.spendingBoxChartItemLine {
+    background-color: hsl(10, 79%, 65%);
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    transition: ease-in-out .3s;
+}
+
+.spendingBoxChartItemLine:hover {
+    background-color: hsl(186, 34%, 60%);
+    cursor: pointer;
+}
+
+.spendingBoxChartItemHeader {
+    margin: 0;
+    color: hsl(28, 10%, 53%);
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+.spendingBoxDivider {
+    margin-top: 25px;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.spendingBoxTotal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spendingBoxTotalLeft {
+    display: flex;
+    flex-direction: column;
+}
+
+.spendingBoxTotalLeftHeader {
+    color: hsl(28, 10%, 53%);
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.spendingBoxTotalLeftAmount {
+    margin-top: 5px;
+    font-size: 30px;
+}
+
+.spendingBoxTotalRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.spendingBoxTotalRightPercentage {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.spendingBoxTotalRightText {
+    font-size: 14px;
+    margin-top: 0;
+    color: hsl(28, 10%, 53%);
+    font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+    .spendingBox {
+        max-width: 420px;
+    }
+}
